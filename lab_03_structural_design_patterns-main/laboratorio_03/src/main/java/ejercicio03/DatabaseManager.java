@@ -1,4 +1,4 @@
-package ejercicio_03.problema;
+package ejercicio03;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -14,7 +14,7 @@ public class DatabaseManager {
     private GameConfig config;
 
     public DatabaseManager() {
-        this.config = new GameConfig(); //  Tercera instancia
+        this.config = GameConfig.getInstance(); //  Unica instancia
         config.setDatabaseUrl("jdbc:mysql://production:3306/gamedb"); // Configuración diferente
     }
 
